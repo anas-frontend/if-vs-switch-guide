@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقارنة بين if و switch</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>المقارنة بين if و Switch Case</h1>
+
+    <p>
+        تستخدم <b>if</b> لاختبار الشروط المختلفة، بينما تستخدم
+        <b>switch</b> عندما يكون لدينا متغير واحد له عدة قيم ثابتة.
+    </p>
+
+    <hr>
+
+    <h2>مثال باستخدام if</h2>
+
+<pre><code>let degree = 85;
+
+if(degree >= 90){
+    console.log("A");
+}
+else if(degree >= 80){
+    console.log("B");
+}
+else{
+    console.log("Fail");
+}</code></pre>
+
+    <h2>مثال باستخدام Switch</h2>
+
+<pre><code>let day = 2;
+
+switch(day){
+
+case 1:
+console.log("Saturday");
+break;
+
+case 2:
+console.log("Sunday");
+break;
+
+default:
+console.log("Unknown");
+
+}</code></pre>
+
+    <h2>جدول المقارنة</h2>
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>if</th>
+            <th>switch</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>تدعم جميع الشروط</td>
+            <td>تدعم القيم الثابتة</td>
+        </tr>
+
+        <tr>
+            <td>تستخدم &gt; و &lt; و &gt;=</td>
+            <td>لا تدعم المقارنات</td>
+        </tr>
+
+        <tr>
+            <td>تدعم && و ||</td>
+            <td>لا تدعمها مباشرة</td>
+        </tr>
+
+        <tr>
+            <td>أفضل للشروط المعقدة</td>
+            <td>أفضل للحالات الكثيرة</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <div class="note">
+
+        <h3>متى نستخدم if ؟</h3>
+
+        <ul>
+            <li>مقارنة الأعمار.</li>
+            <li>مقارنة الدرجات.</li>
+            <li>وجود أكثر من شرط.</li>
+        </ul>
+
+        <h3>متى نستخدم switch ؟</h3>
+
+        <ul>
+            <li>اختيار اليوم.</li>
+            <li>اختيار اللغة.</li>
+            <li>اختيار نوع المستخدم.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+</body>
+</html>

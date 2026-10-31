@@ -1,0 +1,72 @@
+body{
+    font-family:Tahoma, Arial;
+    background:#f4f6f9;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+}
+
+h2{
+    color:#198754;
+    border-bottom:2px solid #198754;
+    padding-bottom:5px;
+}
+
+pre{
+    background:#272822;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+    /* code is always left to right, even in an RTL page */
+    direction:ltr;
+    text-align:left;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.note{
+    margin-top:25px;
+    background:#fff3cd;
+    border-right:5px solid orange;
+    padding:20px;
+    border-radius:8px;
+}
+
+ul{
+    line-height:2;
+}
+
+hr{
+    margin:30px 0;
+}
